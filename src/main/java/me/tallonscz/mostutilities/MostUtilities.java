@@ -1,6 +1,7 @@
 package me.tallonscz.mostutilities;
 
 import com.mojang.logging.LogUtils;
+import me.tallonscz.mostutilities.item.CreativeModsTabs;
 import me.tallonscz.mostutilities.item.ModItems;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,7 +40,7 @@ public class MostUtilities {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event){
-        if(event.getTab() == CreativeModeTabs.SPAWN_EGGS){
+        if(event.getTab() == CreativeModsTabs.MOST_UTILITIES){
             event.accept(MOD_STICK);
         }
     }
