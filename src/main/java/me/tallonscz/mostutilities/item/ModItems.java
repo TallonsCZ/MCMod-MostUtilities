@@ -2,6 +2,7 @@ package me.tallonscz.mostutilities.item;
 
 import me.tallonscz.mostutilities.MostUtilities;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,7 +18,8 @@ public class ModItems {
     public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item",
             () -> new Item(new Item.Properties()));
 
-
+    public static final RegistryObject<Item> DARK_IRON = ITEMS.register("dark_iron",
+            () -> darkIron.dark_iron());
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

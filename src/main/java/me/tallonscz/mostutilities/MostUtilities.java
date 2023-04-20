@@ -3,6 +3,7 @@ package me.tallonscz.mostutilities;
 import com.mojang.logging.LogUtils;
 import me.tallonscz.mostutilities.item.CreativeModsTabs;
 import me.tallonscz.mostutilities.item.ModItems;
+import me.tallonscz.mostutilities.item.darkIron;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -43,6 +44,7 @@ public class MostUtilities {
         if(event.getTab() == CreativeModsTabs.MOST_UTILITIES){
             event.accept(MOD_STICK);
             event.accept(ModItems.TEST_ITEM);
+            event.accept(ModItems.DARK_IRON);
         }
     }
 
