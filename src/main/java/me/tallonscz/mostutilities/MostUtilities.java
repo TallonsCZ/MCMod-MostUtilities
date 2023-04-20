@@ -42,6 +42,7 @@ public class MostUtilities {
     private void addCreative(CreativeModeTabEvent.BuildContents event){
         if(event.getTab() == CreativeModsTabs.MOST_UTILITIES){
             event.accept(MOD_STICK);
+            event.accept(ModItems.TEST_ITEM);
         }
     }
 

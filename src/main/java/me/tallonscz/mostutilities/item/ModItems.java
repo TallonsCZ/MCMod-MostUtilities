@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> MOD_STICK = ITEMS.register("mod_stick",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item",
+            () -> new Item(new Item.Properties()));
 
 
 
