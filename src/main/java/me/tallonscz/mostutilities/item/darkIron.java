@@ -3,8 +3,8 @@ package me.tallonscz.mostutilities.item;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.RegistryObject;
+
+
 
 public class darkIron extends Items {
         public static final Item dark_iron(){

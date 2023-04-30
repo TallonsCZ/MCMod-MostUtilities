@@ -1,6 +1,7 @@
 package me.tallonscz.mostutilities;
 
 import com.mojang.logging.LogUtils;
+import me.tallonscz.mostutilities.block.ModBLocks;
 import me.tallonscz.mostutilities.item.CreativeModsTabs;
 import me.tallonscz.mostutilities.item.ModItems;
 import me.tallonscz.mostutilities.item.darkIron;
@@ -28,6 +29,7 @@ public class MostUtilities {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBLocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -45,6 +47,7 @@ public class MostUtilities {
             event.accept(MOD_STICK);
             event.accept(ModItems.TEST_ITEM);
             event.accept(ModItems.DARK_IRON);
+            event.accept(ModBLocks.DARK_IRON_BLOCK);
         }
     }
 
