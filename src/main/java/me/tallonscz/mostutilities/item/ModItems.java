@@ -21,6 +21,9 @@ public class ModItems {
     public static final RegistryObject<Item> DARK_IRON = ITEMS.register("dark_iron",
             () -> darkIron.dark_iron());
 
+    public static final RegistryObject<Item> DARK_IRON_PICKAXE = ITEMS.register("dark_iron_pickaxe",
+            () -> darkIron_pickaxe.dark_iron_pickaxe());
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

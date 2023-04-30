@@ -47,6 +47,7 @@ public class MostUtilities {
             event.accept(MOD_STICK);
             event.accept(ModItems.TEST_ITEM);
             event.accept(ModItems.DARK_IRON);
+            event.accept(ModItems.DARK_IRON_PICKAXE);
             event.accept(ModBLocks.DARK_IRON_BLOCK);
         }
     }
